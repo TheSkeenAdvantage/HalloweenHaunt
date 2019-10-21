@@ -10,7 +10,7 @@ while True:
     pir.wait_for_motion()
     print("Motion Detected")
     os.system('/usr/bin/vcgencmd display_power 1')
-    os.system('omxplayer --display=5 -o local /home/pi/Downloads/IT.mov')
+    os.system('omxplayer --display=5 -o local /home/pi/github/HalloweenHaunt/src/IT.mov')
 
     pir.wait_for_no_motion()
-    #os.system('/usr/bin/vcgencmd display_power 0')
+    os.system('/usr/bin/vcgencmd display_power 0')
